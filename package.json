@@ -1,6 +1,6 @@
 {
   "name": "@vfk_research/travis_sandbox_nodejs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Test git workflow for nodejs projects using github and travis",
   "main": "index.js",
   "publishConfig": {
