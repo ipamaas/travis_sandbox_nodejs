@@ -1,0 +1,15 @@
+language: node_js
+
+node_js:
+  - "8"
+
+cache: npm
+
+deploy:
+  provider: npm
+  email: "msb.opensource@ipa.fraunhofer.de"
+  api_key: 
+    secure: Fu2AzZP3qMqB6QNDYmXVsIfJdmzOSdYL3ZNygXAPoSOTa2vExTm4Laq1ahEynVRrDY7FNFmltb92OReIDdogKUmub9Ax9ylHeyeYZIhTeOiOuE42sq2ZwCYWZKvH9qMgds28jGcRflNM/Gsggp7F+KODlSieQP5CoF4g/VRZ+rmSvlWVni3Aqlri9sFTsd1h2b4whuNtZxQOpP6dRRuC/C9HJcU7kX+gAPNJlxqaf8cnJfjHVBYflS5TCSmQe9ZQw6QN0VboAPPNLMJ1OEmT/udxWEuMlsvAVLAwtfIwssI5yWT1v7NOJsbjHQ9H6b4fuzzclADzf46hEqEDW1mKEMJNLYi5BZG96vAse6FqIm6/Z4N1SarLjgx/Y1378YoCCVeZllIvvNN6mhHTUFwTel4Q2uNCueSGsg3FlYY6xN/Cd4OEekyWJdEpHVlYfWIIB6aTQWXk+H1FR9CpkLNTlARvzLCLGjg2L+IlsDxvvAneeHR17hd8HZyxxw/O0cPCjigs9EB5/tVkbJTDN4LepW0taLzfvF/fWyGcPpyMDqRwYbFXarfAsxJZ6FcDk0qZkz+TBjh4zb2FD31mWkuGpBJm0fNsgm2QuhavM0HSRrU2GK9eJJgSy6bbfqABiC9oyaED+Ghs2weGPkHO9BFosJc+XUZOqRhnR4uWEd8CZyQ=
+  on:
+    tags: true # only deploys if a git TAG exists for the commit
+    # branch: master # only deploys if branch is master

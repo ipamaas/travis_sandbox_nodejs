@@ -1,0 +1,10 @@
+.github/
+.git/
+.vscode/
+test/
+
+.eslintrc.json
+.gitignore
+.gitattributes
+.npmignore
+.travis.yml
