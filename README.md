@@ -4,3 +4,5 @@
 * develop [![Build Status DEVELOP](https://travis-ci.org/research-virtualfortknox/travis_sandbox_nodejs.svg?branch=develop)](https://travis-ci.org/research-virtualfortknox/travis_sandbox_nodejs)
 
 Test travis ci and git workflow for nodejs projects
+
+If you want to contribute, please read the [Contribution Guidelines](.github/CONTRIBUTING.md)
