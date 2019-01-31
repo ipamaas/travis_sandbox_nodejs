@@ -11,7 +11,7 @@ We welcome any type of contribution:
 - **Roadmap**: contact us if you have ideas to be considered in our roadmap
 - **Exploitation**: write blog posts, tutorials, present the project on public events, ...
 
-If you just want to know how to use the project, see (TODO: Link to README.md)
+If you just want to know how to use the project, see [README.md](/../../)
 
 ## Is this your first contribution on Github?
 
@@ -39,7 +39,7 @@ If you are not sure how to work with Pull Requests, you can find an introduction
 
 - `npm test` need to be passed
 
-- `Coding Guidelines` have to be considered (TODO)
+- `Coding Guidelines` have to be considered: We use `eslint` and base on the StrongLoop style
 
 ## Branch Naming Convention
 
@@ -236,7 +236,7 @@ The Pull Requests will be successfully merged if:
 
 ## License
 
-By contributing to this project, you agree that your contributions will be licensed under its license (TODO link).
+By contributing to this project, you agree that your contributions will be licensed under its [LICENSE](/../../blob/master/LICENSE).
 
 ## Questions
 
