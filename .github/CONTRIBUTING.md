@@ -93,12 +93,17 @@ $ git clone git@github.com:username/<forkedprojectname>.git
 $ cd <forkedprojectname>
 $ git remote add upstream https://github.com/<projectname>/<projectname>.git
 $ git fetch upstream
-$ git checkout -b my-branch upstream/develop
-$ git push -u origin my-branch
-$ git branch --set-upstream-to=upstream/develop my-branch
 ```
 
-### Step 2: Install/Build
+### Step 2: Branch
+
+Create local branches to hold your changes. These should be branched directly off of the `develop` or `release-*` branch.
+
+```sh
+$ git checkout -b my-branch -t upstream/develop
+```
+
+### Step 3: Install/Build
 
 To get all required dependencies, run:
 
@@ -107,14 +112,6 @@ $ npm install
 ```
 
 Now you are ready to make changes.
-
-### Step 3: Branch
-
-Create local branches to hold your changes. These should be branched directly off of the `develop` or `release-*` branch.
-
-```sh
-$ git checkout -b my-branch -t upstream/develop
-```
 
 ### Step 4: Code
 
@@ -143,7 +140,7 @@ This will make the review process easier.
 
 ```sh
 $ git add changed/files
-$ git commit
+$ git commit -m "Commit message"
 ```
 
 ### Step 6: Rebase
@@ -222,11 +219,17 @@ GitHub will automatically update the pull request.
 
 ```sh
 $ git add changed/files
-$ git commit
+$ git commit -m "Commit message"
 $ git push origin my-branch
 ```
 
-Check if a `git rebase` is neccessary before.
+Check if a `git rebase` is neccessary before. 
+If you have a conflict after a rebase with your remote branch on origin, 
+and you are the `ONLY` one working on it, you can overwrite it on origin by 
+
+```sh
+$ git push --force origin my-branch
+```
 
 ### Step 11: Finally
 
