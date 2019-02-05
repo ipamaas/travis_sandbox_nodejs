@@ -184,6 +184,12 @@ $ npm test
 ```
 All tests have to be passed.
 
+To check test coverage run
+
+```sh
+$ npm run test:coverage
+```
+
 Run `integration tests` against local or remote MSB instance:
 
 ```sh
